@@ -9,6 +9,8 @@ builder.Services.AddScoped<TrainerRepository>();
 // Une instance par demande 
 //builder.Services.AddTransient<TrainerRepository>();
 // Une instance par demande et par tache à faire dans la demande
+builder.Services.AddScoped<CourseRepository>();
+
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
